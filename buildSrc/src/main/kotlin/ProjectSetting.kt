@@ -15,19 +15,14 @@ object ProjectSetting {
     // project settings
     const val NAME_APP = "WebView"
 
-    const val APP_DOMAIN = "com"
-    const val APP_PLAY_CONSOLE = "frogobox"
-    const val APP_NAME = "webview"
-
     // Change This
     // Sample : com.[yourcompanyname].[yourprojectname]
     // Sample : com.frogobox.webview
-    // const val PROJECT_APP_ID = "$APP_DOMAIN.$APP_PLAY_CONSOLE.$APP_NAME"
-    const val PROJECT_APP_ID = "com.github.amirisback.cool.web.project" // Change With Your Own
+    const val PROJECT_APP_ID = "com.github.amirisback.web" // Change With Your Own
 
-    const val VERSION_MAJOR = 1
+    const val VERSION_MAJOR = 2
     const val VERSION_MINOR = 0
-    const val VERSION_PATCH = 0
+    const val VERSION_PATCH = 1
 
     // Key Store
     const val PLAYSTORE_STORE_FILE = "keystore/frogoboxmedia.jks"
@@ -39,12 +34,12 @@ object ProjectSetting {
     // Do Not Change This Below
     // ---------------------------------------------------------------------------------------------
 
-    const val PROJECT_MIN_SDK = Version.Gradle.minSdk
-    const val PROJECT_COMPILE_SDK = Version.Gradle.compileSdk
+    const val PROJECT_MIN_SDK = 23
+    const val PROJECT_COMPILE_SDK = 36
     const val PROJECT_TARGET_SDK = PROJECT_COMPILE_SDK
 
     val NAME_APK = NAME_APP.lowercase().replace(" ", "-")
-    const val PROJECT_NAME_SPACE = "$APP_DOMAIN.$APP_PLAY_CONSOLE.$APP_NAME"
+    const val PROJECT_NAME_SPACE = "com.frogobox.webview"
     const val PROJECT_VERSION_CODE = (VERSION_MAJOR * 100) + (VERSION_MINOR * 10) + (VERSION_PATCH * 1)
     const val PROJECT_VERSION_NAME = "$VERSION_MAJOR.$VERSION_MINOR.$VERSION_PATCH"
 
